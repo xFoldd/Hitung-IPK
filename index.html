@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator IPK</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Kalkulator IPK</h1>
+    <form id="ipkForm">
+        <label for="jumlahMataKuliah">Jumlah Mata Kuliah:</label>
+        <input type="number" id="jumlahMataKuliah" min="1" required>
+        <button type="button" onclick="buatFormMataKuliah()">Buat Form</button>
+    </form>
+    <div id="mataKuliahForms"></div>
+    <button type="button" onclick="hitungIPK()">Hitung IPK</button>
+    <h2 id="hasilIPK"></h2>
+    <h3>Hasil Ini Tidak 100% Akurat Dikarenakan Setiap Nilai Memiliki Persentase Yang Beda</h3>
+    <script src="script.js"></script>
+</body>
+</html>
